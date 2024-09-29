@@ -1,34 +1,50 @@
+def determine_fizzbuzz_divisors_of_current_number(current_number, fizzbuzz_divisors, words_to_print_after_current_number):
 
-#def print_current_line(possible_divisors):
+    for word in fizzbuzz_divisors:
+        if current_number % fizzbuzz_divisors[word] == 0:
+            words_to_print_after_current_number.append(word)
 
-def determine_divisors_of_current_number(current_number, possible_divisors, divisors_of_current_number):
+    return words_to_print_after_current_number
 
-    for divisor in possible_divisors:
-        if current_number % divisor == 0:
-            divisors_of_current_number.append(divisor)
+def determine_fizzbuzz_numbers(number_range):
 
-    return divisors_of_current_number
+    fizzbuzz_divisors = {"fizz": 3, "buzz": 5}
 
-possible_divisors = {}
-possible_divisors[3] = "fizz"
-possible_divisors[5] = "buzz"
+    numbers_with_fizz_or_buzz = {}
 
+    for current_number in number_range:
 
-for i in range(1, 100):
-    print(i, end=" ")
+        words_to_print_after_current_number = []
+        words_to_print_after_current_number = determine_fizzbuzz_divisors_of_current_number(current_number, fizzbuzz_divisors, words_to_print_after_current_number)
 
-    divisors_of_current_number = []
-    divisors_of_current_number = determine_divisors_of_current_number(i, possible_divisors, divisors_of_current_number)
+        if not words_to_print_after_current_number:
+            numbers_with_fizz_or_buzz[current_number] = []
+            continue
 
-    divisors_of_current_number.sort()
+        else:
+            numbers_with_fizz_or_buzz[current_number] = words_to_print_after_current_number
 
-    if not divisors_of_current_number:
-        print("\n")
-        continue
+    return numbers_with_fizz_or_buzz
 
-    else:
-        for divisor in divisors_of_current_number:
-            print(possible_divisors[divisor], end="")
-        print("\n")
+def print_fizzbuzz(fizzbuzz_numbers):
+
+    for current_number in fizzbuzz_numbers:
+        if not fizzbuzz_numbers[current_number]:
+            print(current_number)
+        else:
+            string_to_print_after_number = ""
+            for word in fizzbuzz_numbers[current_number]:
+                    string_to_print_after_number += word
+
+            print(current_number, string_to_print_after_number)
+
+if __name__ == "__main__":
+
+    number_range = range(1, 101)
+
+    fizzbuzz_numbers = determine_fizzbuzz_numbers(number_range)
+
+    print_fizzbuzz(fizzbuzz_numbers)
+
 
 
