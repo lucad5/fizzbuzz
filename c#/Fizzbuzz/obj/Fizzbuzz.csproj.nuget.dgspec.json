@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\et\\Documents\\GitHub\\fizzbuzz\\c#\\Fizzbuzz\\Fizzbuzz.csproj": {}
+    "C:\\Users\\et\\Documents\\GitHub\\fizzbuzz\\c#\\fizzbuzz\\fizzbuzz.csproj": {}
   },
   "projects": {
-    "C:\\Users\\et\\Documents\\GitHub\\fizzbuzz\\c#\\Fizzbuzz\\Fizzbuzz.csproj": {
+    "C:\\Users\\et\\Documents\\GitHub\\fizzbuzz\\c#\\fizzbuzz\\fizzbuzz.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\et\\Documents\\GitHub\\fizzbuzz\\c#\\Fizzbuzz\\Fizzbuzz.csproj",
-        "projectName": "Fizzbuzz",
-        "projectPath": "C:\\Users\\et\\Documents\\GitHub\\fizzbuzz\\c#\\Fizzbuzz\\Fizzbuzz.csproj",
+        "projectUniqueName": "C:\\Users\\et\\Documents\\GitHub\\fizzbuzz\\c#\\fizzbuzz\\fizzbuzz.csproj",
+        "projectName": "fizzbuzz",
+        "projectPath": "C:\\Users\\et\\Documents\\GitHub\\fizzbuzz\\c#\\fizzbuzz\\fizzbuzz.csproj",
         "packagesPath": "C:\\Users\\et\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\et\\Documents\\GitHub\\fizzbuzz\\c#\\Fizzbuzz\\obj\\",
+        "outputPath": "C:\\Users\\et\\Documents\\GitHub\\fizzbuzz\\c#\\fizzbuzz\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\et\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -54,14 +54,11 @@
           "assetTargetFallback": true,
           "warn": true,
           "frameworkReferences": {
-            "Microsoft.AspNetCore.App": {
-              "privateAssets": "none"
-            },
             "Microsoft.NETCore.App": {
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.402/PortableRuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.403/PortableRuntimeIdentifierGraph.json"
         }
       }
     }
